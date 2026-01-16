@@ -1,0 +1,103 @@
+<!-- Include header -->
+<div id="header"></div>
+<script>
+    fetch('../includes/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+            const script = document.createElement('script');
+            script.src = '../js/main.js';
+            document.body.appendChild(script);
+        });
+</script>
+
+<!-- Service Hero -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Data Analysis & <span>Visualization</span></h1>
+            <p>Transform raw data into actionable insights that drive business growth and informed decision-making.</p>
+            <div class="hero-buttons">
+                <a href="../contact.html" class="btn btn-primary">Get Started</a>
+                <a href="../services.html" class="btn btn-secondary">Other Services</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Service Details -->
+<section class="section">
+    <div class="container">
+        <div class="service-details">
+            <div class="service-overview">
+                <h2>Unlock the Power of Your Data</h2>
+                <p>In today's data-driven world, businesses generate massive amounts of information. Our Data Analysis & Visualization services help you make sense of this data, transforming complex information into clear, actionable insights that drive growth and innovation.</p>
+                
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-database"></i>
+                        <h3>Data Collection</h3>
+                        <p>Structured and unstructured data collection from multiple sources</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Advanced Analytics</h3>
+                        <p>Predictive modeling and statistical analysis for informed decisions</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-eye"></i>
+                        <h3>Interactive Dashboards</h3>
+                        <p>Real-time visualizations and customizable reporting tools</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="service-process">
+                <h2>Our Process</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h3>Discovery & Assessment</h3>
+                        <p>We analyze your current data infrastructure and business objectives</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h3>Data Integration</h3>
+                        <p>Consolidate data from various sources into a unified platform</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h3>Analysis & Insights</h3>
+                        <p>Apply advanced analytics to extract meaningful patterns and trends</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h3>Visualization & Reporting</h3>
+                        <p>Create intuitive dashboards and comprehensive reports</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to Transform Your Data into Strategy?</h2>
+            <p>Let us help you make data-driven decisions that propel your business forward.</p>
+            <a href="../contact.html" class="btn btn-accent">Schedule a Consultation</a>
+        </div>
+    </div>
+</section>
+
+<!-- Include footer -->
+<div id="footer"></div>
+<script>
+    fetch('../includes/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+</script>

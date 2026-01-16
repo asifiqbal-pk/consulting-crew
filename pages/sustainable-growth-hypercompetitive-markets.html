@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Strategic Value of Predictive Analytics | Consulting Crew</title>
+
+  <!-- Meta Descriptions -->
+  <meta name="description" content="Strategic consulting advisory firm specializing in data intelligence, digital transformation, and organizational excellence for SMEs and growth-stage companies.">
+  <meta name="keywords" content="strategic consulting, business advisory, data intelligence, digital transformation, growth strategy, organizational excellence, SME consulting">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Consulting Crew | Strategic Advisory for Growth Businesses">
+  <meta property="og:description" content="Strategic consulting advisory firm specializing in data intelligence, digital transformation, and organizational excellence for SMEs and growth-stage companies.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:url" content="https://consultingcrew.com">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Prata:wght@400&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CRITICAL CSS -->
+  <style>
+    .header {position: fixed; top: 0; width: 100%; z-index: 1030; background: white; box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);}
+    .hero {position: relative; color: white; padding: 4rem 0;}
+    .hero__content {position: relative; z-index: 1; text-align: center;}
+    .main {opacity: 0; transition: opacity 0.3s ease;}
+    .main.loaded {opacity: 1;}
+    .header, .hero {opacity: 1 !important;}
+    body:not(.loaded) .main { opacity: 0; }
+    body.loaded .main { opacity: 1; }
+  </style>
+
+  <link rel="stylesheet" href="css/main.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+</head>
+
+<body>
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <div class="logo__image">
+          <img src="images/CC_Logo.png" alt="Consulting Crew" width="60" height="60" loading="eager">
+        </div>
+        <div class="logo__text">
+          <span class="logo__title">Consulting Crew</span>
+          <span class="logo__tagline">Empowering Your Business to Grow</span>
+        </div>
+      </a>
+
+<!-- Main Navigation -->
+<ul class="nav__menu" id="main-menu">
+  <!-- Home -->
+  <li class="nav__item">
+    <a href="index.html" class="nav__link">
+      <i class="fas fa-home nav__icon"></i>
+      <span class="nav__text">Home</span>
+    </a>
+  </li>
+  
+  <!-- About Us -->
+  <li class="nav__item has-dropdown">
+    <a href="about.html" class="nav__link">
+      <i class="fas fa-building nav__icon"></i>
+      <span class="nav__text">About Us</span>
+      <i class="fas fa-chevron-down nav__dropdown-icon"></i>
+    </a>
+    <div class="nav__dropdown">
+      <div class="dropdown__header">
+        <h4>About Us</h4>
+        <p>Learn about our strategic approach</p>
+      </div>
+      <a href="team.html" class="nav__dropdown-item">
+        <i class="fas fa-user-tie"></i>
+        <div>
+          <p class="dropdown-item__title">Leadership Team</p>
+          <span class="dropdown-item__desc">Meet our strategic advisors</span>
+        </div>
+      </a>
+      <a href="business-ethics.html" class="nav__dropdown-item">
+        <i class="fas fa-balance-scale"></i>
+        <div>
+          <span class="dropdown-item__title">Business Ethics</span>
+          <span class="dropdown-item__desc">Our commitment to integrity</span>
+        </div>
+      </a>
+      <a href="csr.html" class="nav__dropdown-item">
+        <i class="fas fa-handshake"></i>
+        <div>
+          <span class="dropdown-item__title">Corporate Responsibility</span>
+          <span class="dropdown-item__desc">Sustainable impact focus</span>
+        </div>
+      </a>
+    </div>
+  </li>
+  
+  <!-- Services Mega Menu -->
+  <li class="nav__item has-megamenu">
+    <a href="services.html" class="nav__link">
+      <i class="fas fa-chart-line nav__icon"></i>
+      <span class="nav__text">Services We Offer</span>
+      <i class="fas fa-chevron-down nav__dropdown-icon"></i>
+    </a>
+    <div class="nav__megamenu">
+      <div class="megamenu__grid">
+        <div class="megamenu__column">
+          <h4 class="megamenu__title">
+            <i class="fas fa-database text--blue"></i>
+            Data & Intelligence
+          </h4>
+          <a href="data-analysis.html" class="megamenu__item">
+            <i class="fas fa-chart-bar text--blue"></i>
+            <div>
+              <span class="megamenu__item-title">Data Intelligence</span>
+              <span class="megamenu__item-desc">Transform data into strategic assets</span>
+            </div>
+          </a>
+          <a href="analytics.html" class="megamenu__item">
+            <i class="fas fa-project-diagram text--blue"></i>
+            <div>
+              <span class="megamenu__item-title">Predictive Analytics</span>
+              <span class="megamenu__item-desc">Forward-looking insights</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="megamenu__column">
+          <h4 class="megamenu__title">
+            <i class="fas fa-laptop-code text--green"></i>
+            Digital Transformation
+          </h4>
+          <a href="digital-marketing.html" class="megamenu__item">
+            <i class="fas fa-bullhorn text--green"></i>
+            <div>
+              <span class="megamenu__item-title">Digital Marketing</span>
+              <span class="megamenu__item-desc">Optimize digital presence</span>
+            </div>
+          </a>
+          <a href="branding.html" class="megamenu__item">
+            <i class="fas fa-trademark text--green"></i>
+            <div>
+              <span class="megamenu__item-title">Branding Strategy</span>
+              <span class="megamenu__item-desc">Craft compelling brand narratives</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="megamenu__column">
+          <h4 class="megamenu__title">
+            <i class="fas fa-globe text--orange"></i>
+            Web Services
+          </h4>
+    
+          <a href="web-development.html" class="megamenu__item">
+            <i class="fas fa-code text--orange"></i>
+            <div>
+              <span class="megamenu__item-title">Web Development</span>
+              <span class="megamenu__item-desc">Digital solutions for online presence</span>
+            </div>
+          </a>
+          <a href="web-hosting.html" class="megamenu__item">
+            <i class="fas fa-server text--orange"></i>
+            <div>
+              <span class="megamenu__item-title">Web Hosting</span>
+              <span class="megamenu__item-desc">Reliable infrastructure for operations</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="megamenu__column">
+          <h4 class="megamenu__title">
+            <i class="fas fa-users-cog text--purple"></i>
+            Organization Excellence
+          </h4>
+  
+          <a href="hr-services.html" class="megamenu__item">
+            <i class="fas fa-user-graduate text--purple"></i>
+            <div>
+              <span class="megamenu__item-title">Talent Strategy</span>
+              <span class="megamenu__item-desc">Optimize human capital</span>
+            </div>
+          </a>
+          <a href="consulting.html" class="megamenu__item">
+            <i class="fas fa-lightbulb text--purple"></i>
+            <div>
+              <span class="megamenu__item-title">Strategic Consulting</span>
+              <span class="megamenu__item-desc">Expert advisory services</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </li>
+  
+  <!-- Client Impact -->
+  <li class="nav__item">
+    <a href="portfolio.html" class="nav__link">
+      <i class="fas fa-chart-pie nav__icon"></i>
+      <span class="nav__text">Portfolio</span>
+    </a>
+  </li>
+  
+  <!-- Insights -->
+  <li class="nav__item">
+    <a href="blog.html" class="nav__link">
+      <i class="fas fa-blog nav__icon"></i>
+      <span class="nav__text">Insights</span>
+    </a>
+  </li>
+
+  <!-- Contact -->
+  <li class="nav__item">
+    <a href="contact.html" class="nav__link">
+      <i class="fas fa-envelope nav__icon"></i>
+      <span class="nav__text">Contact</span>
+    </a>
+  </li>
+</ul>
+
+<!-- Right Side Actions -->
+<div class="nav__actions">
+  <!-- Search Toggle (Mobile) -->
+  <button class="nav__action-btn nav__action-search d--flex d--md-none" aria-label="Search">
+    <i class="fas fa-search"></i>
+  </button>
+  
+  <!-- Search Bar (Desktop) -->
+  <div class="nav__search d--none d--md-flex">
+    <form class="search-form--compact" id="headerSearchForm">
+      <div class="search-input-wrapper">
+        <input type="search" 
+               class="form-control search-input" 
+               placeholder="Search..." 
+               aria-label="Search">
+        <button type="submit" class="search-submit" aria-label="Submit search">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Mobile Menu Toggle -->
+  <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-menu">
+    <span class="menu-icon">
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+    </span>
+  </button>
+</div>
+
+  <!-- Mobile Search Overlay -->
+  <div class="mobile-search-overlay">
+    <div class="container">
+      <form class="search-form--mobile">
+        <div class="search-input-wrapper">
+          <i class="fas fa-search search-icon"></i>
+          <input type="search" 
+                 class="form-control search-input" 
+                 placeholder="Search strategic insights..." 
+                 aria-label="Search">
+          <button type="button" class="search-close" aria-label="Close search">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="search-suggestions">
+          <p class="text--sm text--muted mb--sm">Popular searches:</p>
+          <div class="flex flex--wrap gap--xs">
+            <a href="data-analysis.html" class="badge badge--suggestion">Data Intelligence</a>
+            <a href="web-development.html" class="badge badge--suggestion">Digital Transformation</a>
+            <a href="digital-marketing.html" class="badge badge--suggestion">Growth Strategy</a>
+            <a href="branding.html" class="badge badge--suggestion">Branding</a>
+            <a href="data-analysis.html" class="badge badge--suggestion">Market Analysis</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</header>
+
+<!-- Sticky Header Progress Indicator -->
+<div class="header-progress">
+  <div class="progress-bar"></div>
+</div>  
+
+<!-- Breadcrumbs -->
+<div class="breadcrumbs bg--light pt--sm pb--sm">
+  <div class="container">
+    <nav aria-label="Breadcrumb">
+      <ul class="breadcrumb-list flex items--center gap--xs">
+        <li class="breadcrumb-item">
+          <a href="index.html" class="text--sm text--muted"><i class="fas fa-home mr--2xs"></i></a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="blog.html" class="text--sm text--muted">Strategic Insights</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="#" class="text--sm text--muted">Growth Strategy</a>
+        </li>
+        <li class="breadcrumb-item">
+          <span class="text--sm text--dark font--medium">Sustainable Growth in Hypercompetitive Markets</span>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<main class="main">
+  <!-- Article Header -->
+  <section class="section pt--xl pb--lg">
+    <div class="container max-w--content-lg">
+      <div class="article-header">
+        <div class="article-categories mb--md">
+          <a href="#" class="article-category-badge bg--red">Growth Strategy</a>
+          <a href="#" class="article-category-badge bg--orange">Operational Excellence</a>
+        </div>
+        
+        <h1 class="executive-heading executive-heading--xl mb--md">Sustainable Growth in Hypercompetitive Markets</h1>
+        
+        <div class="article-meta mb--xl">
+          <div class="article-author">
+            <div class="article-author__avatar">
+              <img src="images/team-man.jpeg" alt="John Smith" loading="lazy">
+            </div>
+            <div class="article-author__info">
+              <span class="article-author__name">John Smith</span>
+              <span class="article-author__role">Chief Strategy Officer</span>
+            </div>
+          </div>
+          <div class="article-details">
+            <span class="article-date"><i class="fas fa-calendar-alt mr--xs"></i>February 28, 2024</span>
+            <span class="article-read-time"><i class="fas fa-clock mr--xs"></i>5 min read</span>
+          </div>
+        </div>
+        
+        <div class="article-featured-image">
+          <img src="images/insights/growth-strategy.jpg" alt="Growth Strategy Framework" class="rounded--lg" loading="lazy">
+          <div class="image-caption text--sm text--muted mt--sm">Balancing rapid expansion with operational excellence for sustainable value creation</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Article Content -->
+  <section class="section pt--lg pb--xl">
+    <div class="container max-w--content-lg">
+      <div class="grid grid--3 gap--xl">
+        <!-- Main Content -->
+        <div class="grid__col-span-2">
+          <article class="article-content">
+            <div class="article-excerpt card bg--light p--lg mb--lg">
+              <p class="text--lg font--medium">Executive Summary: In hypercompetitive markets where customer acquisition costs are rising and competitive advantages are increasingly temporary, sustainable growth requires balancing expansion velocity with operational resilience. Our research reveals that organizations mastering this balance achieve 3.5x greater market capitalization growth over five years compared to growth-at-all-costs competitors.</p>
+            </div>
+            
+            <h2>The Growth Paradox in Modern Markets</h2>
+            <p>Traditional growth models emphasizing market share expansion and revenue growth at any cost are failing in today's environment. The average lifespan of a competitive advantage has shrunk from 10-15 years to just 3-5 years, creating a fundamental tension: how to grow rapidly while building sustainable capabilities that endure beyond temporary market positions.</p>
+            
+            <h3>Three Dimensions of Sustainable Growth</h3>
+            
+            <div class="insight-box bg--red-light p--lg my--lg">
+              <h4 class="text--red mb--sm"><i class="fas fa-balance-scale mr--sm"></i>Strategic Insight</h4>
+              <p class="mb--sm">Sustainable growth integrates three interdependent dimensions: profitable expansion (revenue growth), operational resilience (cost efficiency), and strategic optionality (future growth potential). Excellence in one dimension without the others creates unsustainable growth patterns.</p>
+            </div>
+            
+            <h2>The Sustainable Growth Framework</h2>
+            
+            <div class="growth-framework card p--lg my--lg border--red">
+              <h3 class="text--red mb--md">Four-Quadrant Growth Portfolio</h3>
+              <div class="grid grid--2 gap--md">
+                <div class="growth-quadrant card p--md">
+                  <div class="quadrant-label bg--red text--white">Core Optimization</div>
+                  <h4>Defend & Extend</h4>
+                  <p class="text--sm">Maximize profitability of existing business through operational excellence and incremental innovation</p>
+                  <div class="quadrant-metrics text--sm text--muted">Target: 5-10% annual growth, 20%+ margins</div>
+                </div>
+                <div class="growth-quadrant card p--md">
+                  <div class="quadrant-label bg--orange text--white">Adjacent Expansion</div>
+                  <h4>Expand & Scale</h4>
+                  <p class="text--sm">Leverage existing capabilities to enter related markets or customer segments</p>
+                  <div class="quadrant-metrics text--sm text--muted">Target: 15-25% annual growth, 15-20% margins</div>
+                </div>
+                <div class="growth-quadrant card p--md">
+                  <div class="quadrant-label bg--blue text--white">Transformative Innovation</div>
+                  <h4>Create & Disrupt</h4>
+                  <p class="text--sm">Develop new capabilities and business models that create future growth engines</p>
+                  <div class="quadrant-metrics text--sm text--muted">Target: 30%+ annual growth, initially negative margins</div>
+                </div>
+                <div class="growth-quadrant card p--md">
+                  <div class="quadrant-label bg--green text--white">Ecosystem Development</div>
+                  <h4>Partner & Co-create</h4>
+                  <p class="text--sm">Build partnerships and ecosystems that create growth beyond organizational boundaries</p>
+                  <div class="quadrant-metrics text--sm text--muted">Target: 20-30% ecosystem value creation</div>
+                </div>
+              </div>
+            </div>
+            
+            <h2>Balancing Growth Velocity and Operational Resilience</h2>
+            
+            <div class="balance-framework card p--lg my--lg">
+              <h3 class="mb--md">The Growth-Resilience Matrix</h3>
+              <div class="matrix-visual">
+                <div class="matrix-quadrant matrix-quadrant--high-high">
+                  <div class="quadrant-title">Sustainable Leaders</div>
+                  <div class="quadrant-desc">High growth with high operational resilience</div>
+                  <div class="quadrant-stats">8% of organizations achieve this state</div>
+                </div>
+                <div class="matrix-quadrant matrix-quadrant--high-low">
+                  <div class="quadrant-title">Brittle Growers</div>
+                  <div class="quadrant-desc">High growth with low operational resilience</div>
+                  <div class="quadrant-stats">42% risk of failure within 3 years</div>
+                </div>
+                <div class="matrix-quadrant matrix-quadrant--low-high">
+                  <div class="quadrant-title">Stable Defenders</div>
+                  <div class="quadrant-desc">Low growth with high operational resilience</div>
+                  <div class="quadrant-stats">Vulnerable to disruption</div>
+                </div>
+                <div class="matrix-quadrant matrix-quadrant--low-low">
+                  <div class="quadrant-title">Declining Organizations</div>
+                  <div class="quadrant-desc">Low growth with low operational resilience</div>
+                  <div class="quadrant-stats">72% fail within 5 years</div>
+                </div>
+              </div>
+            </div>
+            
+            <h2>Strategic Levers for Sustainable Growth</h2>
+            
+            <div class="growth-levers grid grid--2 gap--md my--lg">
+              <div class="lever card p--md">
+                <div class="lever-icon bg--red text--white rounded--full"><i class="fas fa-bullseye"></i></div>
+                <h4>Differentiated Value Propositions</h4>
+                <p class="text--sm">Creating unique customer value that competitors cannot easily replicate</p>
+              </div>
+              <div class="lever card p--md">
+                <div class="lever-icon bg--orange text--white rounded--full"><i class="fas fa-cogs"></i></div>
+                <h4>Scalable Operating Models</h4>
+                <p class="text--sm">Architecting operations that maintain efficiency at increasing scale</p>
+              </div>
+              <div class="lever card p--md">
+                <div class="lever-icon bg--blue text--white rounded--full"><i class="fas fa-lightbulb"></i></div>
+                <h4>Continuous Innovation Pipeline</h4>
+                <p class="text--sm">Systematic approach to developing future growth options</p>
+              </div>
+              <div class="lever card p--md">
+                <div class="lever-icon bg--green text--white rounded--full"><i class="fas fa-users"></i></div>
+                <h4>Talent Density & Culture</h4>
+                <p class="text--sm">Attracting and developing exceptional talent that drives disproportionate value</p>
+              </div>
+            </div>
+            
+            <h2>Metrics for Sustainable Growth</h2>
+            <p>Traditional growth metrics (revenue, market share) are insufficient for measuring sustainable growth. Leading organizations track balanced metrics across four categories:</p>
+            
+            <table class="growth-metrics my--lg">
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Key Metrics</th>
+                  <th>Healthy Range</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Growth Velocity</td>
+                  <td>Revenue growth rate, Customer acquisition rate, Market share growth</td>
+                  <td>15-25% annually</td>
+                </tr>
+                <tr>
+                  <td>Profitability Quality</td>
+                  <td>Gross margin, Operating margin, Free cash flow conversion</td>
+                  <td>20%+ operating margin</td>
+                </tr>
+                <tr>
+                  <td>Customer Health</td>
+                  <td>Net promoter score, Customer lifetime value, Retention rate</td>
+                  <td>NPS > 40, Retention > 90%</td>
+                </tr>
+                <tr>
+                  <td>Innovation Vitality</td>
+                  <td>R&D efficiency, New product revenue, Future options value</td>
+                  <td>30%+ revenue from new products</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <h2>Avoiding Growth Traps</h2>
+            <p>Sustainable growth requires avoiding common pitfalls that undermine long-term success:</p>
+            
+            <div class="growth-traps grid grid--2 gap--md my--lg">
+              <div class="trap card p--md">
+                <h4 class="text--red"><i class="fas fa-exclamation-triangle mr--sm"></i>Profitless Growth</h4>
+                <p class="text--sm">Growing revenue without corresponding profit improvement, creating scaling losses</p>
+              </div>
+              <div class="trap card p--md">
+                <h4 class="text--red"><i class="fas fa-exclamation-triangle mr--sm"></i>Cultural Dilution</h4>
+                <p class="text--sm">Rapid growth that erodes core values and operating principles</p>
+              </div>
+              <div class="trap card p--md">
+                <h4 class="text--red"><i class="fas fa-exclamation-triangle mr--sm"></i>Capability Stretch</h4>
+                <p class="text--sm">Growing beyond organizational capabilities, creating execution failures</p>
+              </div>
+              <div class="trap card p--md">
+                <h4 class="text--red"><i class="fas fa-exclamation-triangle mr--sm"></i>Market Myopia</h4>
+                <p class="text--sm">Focusing on short-term growth at the expense of long-term positioning</p>
+              </div>
+            </div>
+            
+            <div class="executive-takeaway card bg--dark text--white p--lg my--xl">
+              <h3 class="text--white"><i class="fas fa-chess-king mr--sm"></i>Executive Takeaway</h3>
+              <p class="mb--sm">Sustainable growth in hypercompetitive markets requires rejecting the false choice between growth and profitability. The most successful organizations treat growth and operational excellence as complementary, not competing, priorities—investing in scalable systems, differentiated capabilities, and organizational resilience while pursuing aggressive market expansion.</p>
+              <p class="text--sm">This balanced approach creates organizations that grow faster than competitors while becoming more efficient, more innovative, and more resilient—a virtuous cycle that creates durable competitive advantages and sustains market leadership through multiple business cycles.</p>
+            </div>
+            
+            <div class="article-tags mt--xl">
+              <h4 class="text--sm text--muted mb--sm">Strategic Tags:</h4>
+              <div class="flex flex--wrap gap--xs">
+                <a href="#" class="tag">#SustainableGrowth</a>
+                <a href="#" class="tag">#GrowthStrategy</a>
+                <a href="#" class="tag">#OperationalExcellence</a>
+                <a href="#" class="tag">#CompetitiveAdvantage</a>
+                <a href="#" class="tag">#ValueCreation</a>
+              </div>
+            </div>
+          </article>
+          
+          <!-- Author Bio -->
+          <div class="author-bio card p--lg mt--xl">
+            <div class="flex items--center gap--md">
+              <div class="author-bio__avatar">
+                <img src="images/team-man.jpeg" alt="John Smith" class="rounded--full">
+              </div>
+              <div>
+                <h3 class="mb--xs">John Smith</h3>
+                <p class="text--sm text--muted mb--sm">Chief Strategy Officer | 15+ years in growth strategy and strategic transformation</p>
+                <p class="text--sm">John specializes in helping organizations architect sustainable growth strategies that balance expansion velocity with operational resilience. His research focuses on growth portfolio management and capability development in competitive markets.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Navigation -->
+          <div class="article-navigation flex justify--between mt--xl">
+            <a href="blog/human-capital-digital-disruption.html" class="btn btn--outline">
+              <i class="fas fa-chevron-left mr--sm"></i>
+              Previous: Human Capital Strategy
+            </a>
+            <a href="blog/enterprise-architecture-digital-innovation.html" class="btn btn--outline">
+              Next: Enterprise Architecture
+              <i class="fas fa-chevron-right ml--sm"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <!-- Categories -->
+          <div class="sidebar-widget card p--lg mb--lg">
+            <h4 class="sidebar-widget__title">Insight Categories</h4>
+            <ul class="sidebar-widget__list">
+              <li><a href="#"><i class="fas fa-chart-line mr--sm"></i>Growth Strategy <span class="badge">9</span></a></li>
+              <li><a href="#" class="active"><i class="fas fa-brain mr--sm"></i>Data Intelligence <span class="badge">12</span></a></li>
+              <li><a href="#"><i class="fas fa-rocket mr--sm"></i>Digital Transformation <span class="badge">8</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <!-- Footer Main -->
+  <div class="footer__main">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Column 1 - Company Info -->
+        <div class="footer__section">
+          <div class="footer__brand">
+            <div><a href="index.html" class="footer__logo">
+              <img src="images/CC_Logo.png" alt="Consulting Crew" width="40" height="40" loading="lazy"></div>
+              <div class="flex--wrap">
+                <h4 class="footer__logo-title">Consulting Crew</h4>
+                <span class="footer__logo-tagline">Empowering Your Business to Grow</span>
+              </div>
+            </a>
+          </div>
+          
+          <p class="footer__description">
+            We architect sustainable competitive advantage through data intelligence, digital transformation, and organizational excellence for growth-focused organizations.
+          </p>
+          
+          <!-- Trust Indicators -->
+          <div class="footer__trust">
+            <div class="trust-item">
+              <i class="fas fa-shield-alt"></i>
+              <span>Trusted Advisory Partner</span>
+            </div>
+            <div class="trust-item">
+              <i class="fas fa-award"></i>
+              <span>Industry Recognition</span>
+            </div>
+            <div class="trust-item">
+              <i class="fas fa-check-circle"></i>
+              <span>95% Client Retention</span>
+            </div>
+          </div>
+        
+        <!-- Newsletter -->
+        <div class="footer__section">
+          <div class="footer__newsletter">
+            <h4 class="footer__title">Stay Updated</h4>
+            
+            <!-----------
+            <p class="footer__newsletter-desc">
+              Receive exclusive strategic frameworks, market analysis, and growth insights directly from our advisory team.
+            </p>
+            --------->
+            
+            <form class="newsletter-form" id="footerNewsletter">
+              <div class="form-group">
+                <input type="email" 
+                       class="form-control" 
+                       placeholder="Your professional email" 
+                       required>
+                <button type="submit" class="btn btn--primary">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+              <div class="form-checkbox">
+                <input type="checkbox" id="newsletterConsent" required>
+                <label for="newsletterConsent">
+                  I agree to receive strategic insights and updates
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Services Section -->
+<div class="footer__nav-section">
+  <h4 class="footer__title">
+    <i class="fas fa-chart-line"></i>
+    Our Services
+  </h4>
+  
+  <div class="footer__links-grid">
+    <!-- Data & Intelligence -->
+    <div class="services-category">
+      <h5 class="category-title">
+        <i class="fas fa-database"></i>
+        Data & Intelligence
+      </h5>
+      <ul class="footer__links">
+        <li>
+          <a href="data-analysis.html">
+            <i class="fas fa-chart-bar"></i>
+            Data Intelligence
+            <span class="link-badge">Featured</span>
+          </a>
+        </li>
+        <li>
+          <a href="analytics.html">
+            <i class="fas fa-project-diagram"></i>
+            Predictive Analytics
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <!-- Digital Transformation -->
+    <div class="services-category">
+      <h5 class="category-title">
+        <i class="fas fa-laptop-code"></i>
+        Digital Transformation
+      </h5>
+      <ul class="footer__links">
+        <li>
+          <a href="digital-marketing.html">
+            <i class="fas fa-bullhorn"></i>
+            Digital Marketing
+          </a>
+        </li>
+        <li>
+          <a href="branding.html">
+            <i class="fas fa-trademark"></i>
+            Branding & Identity
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <!-- Web Services -->
+    <div class="services-category">
+      <h5 class="category-title">
+        <i class="fas fa-globe"></i>
+        Web Services
+      </h5>
+      <ul class="footer__links">
+        <li>
+          <a href="web-development.html">
+            <i class="fas fa-code"></i>
+            Web Development
+          </a>
+        </li>
+        <li>
+          <a href="web-hosting.html">
+            <i class="fas fa-server"></i>
+            Web Hosting
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <!-- Organizational Excellence -->
+    <div class="services-category">
+      <h5 class="category-title">
+        <i class="fas fa-users-cog"></i>
+        Organizational Excellence
+      </h5>
+      <ul class="footer__links">
+        <li>
+          <a href="hr-services.html">
+            <i class="fas fa-user-graduate"></i>
+            Talent Strategy
+          </a>
+        </li>
+        <li>
+          <a href="consulting.html">
+            <i class="fas fa-lightbulb"></i>
+            Strategic Consulting
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+</div>
+
+<!-- Company Section -->
+<div class="footer__nav-section">
+  <h4 class="footer__title">
+    <i class="fas fa-building"></i>
+    Our Company
+  </h4>
+  
+  <div class="footer__links-grid">
+    <!-- About & Team -->
+    <div class="services-category">
+      <h5 class="category-title">
+        <i class="fas fa-info-circle"></i>
+        About Us
+      </h5>
+      <ul class="footer__links">
+        <li>
+          <a href="about.html">
+            <i class="fas fa-chevron-right"></i>
+            Our Story
+          </a>
+        </li>
+        <li>
+          <a href="team.html">
+            <i class="fas fa-chevron-right"></i>
+            Leadership Team
+          </a>
+        </li>
+        <li>
+          <a href="careers.html">
+            <i class="fas fa-chevron-right"></i>
+            Careers
+            <span class="link-badge">Hiring</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <!-- Impact & Insights -->
+    <div class="services-category">
+      <h6 class="category-title">
+        <i class="fas fa-chart-pie"></i>
+        Impact & Insights
+      </h6>
+      <ul class="footer__links">
+        <li>
+          <a href="portfolio.html">
+            <i class="fas fa-chevron-right"></i>
+            Client Portfolio
+          </a>
+        </li>
+        <li>
+          <a href="blog.html">
+            <i class="fas fa-chevron-right"></i>
+            Strategic Insights
+          </a>
+        </li>
+        <li>
+          <a href="case-studies.html">
+            <i class="fas fa-chevron-right"></i>
+            Case Studies
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Contact & Social -->
+<div class="footer__nav-section">
+  <h4 class="footer__title">
+    <i class="fas fa-envelope"></i>
+    Let's Engage
+  </h4>
+  
+  <div class="footer__contact-grid">
+    <div class="contact-method">
+      <div class="contact-method__icon">
+        <i class="fas fa-envelope"></i>
+      </div>
+      <div>
+        <p class="contact-method__info">
+          <a href="mailto:engage@consultingcrew.com" class="contact-method__link">
+            engage@consultingcrew.com
+          </a>
+        </p>
+      </div>
+    </div>
+    
+    <div class="contact-method">
+      <div class="contact-method__icon">
+        <i class="fas fa-phone"></i>
+      </div>
+      <div>
+        <p class="contact-method__info">
+          <a href="tel:+923323450433" class="contact-method__link">
+            +92 332 3450433
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="contact-method">
+      <div class="contact-method__icon">
+        <i class="fas fa-clock"></i>
+      </div>
+      <div>
+        <p class="contact-method__info">
+          <a class="contact-method__link">
+          Mon-Fri: 9:00 AM - 6:00 PM
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="contact-method">
+      <div class="contact-method__icon">
+        <i class="fas fa-map-marker-alt"></i>
+      </div>
+      <div>
+        <p class="contact-method__info">
+          <a class="contact-method__link">
+          Serving clients globally with headquarters in Pakistan
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+          <!-- Social Media -->
+          <div class="footer__social">
+            <h5 class="footer__subtitle">Let's Connect</h5>
+            <div class="social-links">
+              <a href="https://linkedin.com/company/consultingcrew" class="social-link" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+                <span class="social-tooltip">Professional Network</span>
+              </a>
+              <a href="https://twitter.com/consultingcrew" class="social-link" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+                <span class="social-tooltip">Industry Insights</span>
+              </a>
+              <a href="https://youtube.com/@consultingcrew" class="social-link" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+                <span class="social-tooltip">Expert Webinars</span>
+              </a>
+              <a href="https://instagram.com/consultingcrew" class="social-link" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+                <span class="social-tooltip">Behind the Scenes</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__bottom-content">
+    
+        <div class="footer__copyright">
+          <p>&copy; <span id="currentYear"></span> Consulting Crew. All rights reserved.</p>
+        </div>
+        
+        <div class="footer__legal">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <span>•</span>
+          <a href="terms-of-service.html">Terms of Service</a>
+          <span>•</span>
+          <a href="cookies-policy.html">Cookie Policy</a>
+          <span>•</span>
+          <a href="disclaimer.html">Disclaimer</a>
+        </div>
+
+        <button class="footer__back-to-top" id="footerBackToTop" aria-label="Back to top">
+          <i class="fas fa-chevron-up"></i>
+          <span>Back to Top</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+<!-- Chat Widget -->
+<div class="chat-widget">
+    <button class="chat-toggle" aria-label="Open chat">
+        <i class="fas fa-comments"></i>
+        <span class="chat-badge">Live</span>
+    </button>
+    <div class="chat-window">
+        <div class="chat-header">
+            <h4>Strategic Advisory Support</h4>
+            <button class="chat-close" aria-label="Close chat">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-message chat-message--bot">
+                <p>Hello! How can we assist with your strategic growth questions today?</p>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type your question..." aria-label="Chat message">
+            <button type="submit" aria-label="Send message">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+</div>
+</footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

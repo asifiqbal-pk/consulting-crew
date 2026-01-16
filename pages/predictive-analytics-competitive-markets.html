@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>The Strategic Value of Predictive Analytics in Competitive Markets | Consulting Crew</title>
+
+  <!-- Meta Descriptions -->
+  <meta name="description" content="Strategic consulting advisory firm specializing in data intelligence, digital transformation, and organizational excellence for SMEs and growth-stage companies.">
+  <meta name="keywords" content="strategic consulting, business advisory, data intelligence, digital transformation, growth strategy, organizational excellence, SME consulting">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Consulting Crew | Strategic Advisory for Growth Businesses">
+  <meta property="og:description" content="Strategic consulting advisory firm specializing in data intelligence, digital transformation, and organizational excellence for SMEs and growth-stage companies.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:url" content="https://consultingcrew.com">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Prata:wght@400&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CRITICAL CSS -->
+  <style>
+    .header {position: fixed; top: 0; width: 100%; z-index: 1030; background: white; box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);}
+    .hero {position: relative; color: white; padding: 4rem 0;}
+    .hero__content {position: relative; z-index: 1; text-align: center;}
+    .main {opacity: 0; transition: opacity 0.3s ease;}
+    .main.loaded {opacity: 1;}
+    .header, .hero {opacity: 1 !important;}
+    body:not(.loaded) .main { opacity: 0; }
+    body.loaded .main { opacity: 1; }
+  </style>
+
+  <link rel="stylesheet" href="css/main.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+</head>
+
+<body>
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <div class="logo__image">
+          <img src="images/CC_Logo.png" alt="Consulting Crew" width="60" height="60" loading="eager">
+        </div>
+        <div class="logo__text">
+          <span class="logo__title">Consulting Crew</span>
+          <span class="logo__tagline">Empowering Your Business to Grow</span>
+        </div>
+      </a>
+
+<!-- Main Navigation -->
+<ul class="nav__menu" id="main-menu">
+  <!-- Home -->
+  <li class="nav__item">
+    <a href="index.html" class="nav__link">
+      <i class="fas fa-home nav__icon"></i>
+      <span class="nav__text">Home</span>
+    </a>
+  </li>
+  
+  <!-- About Us -->
+  <li class="nav__item has-dropdown">
+    <a href="about.html" class="nav__link">
+      <i class="fas fa-building nav__icon"></i>
+      <span class="nav__text">About Us</span>
+      <i class="fas fa-chevron-down nav__dropdown-icon"></i>
+    </a>
+    <div class="nav__dropdown">
+      <div class="dropdown__header">
+        <h4>About Us</h4>
+        <p>Learn about our strategic approach</p>
+      </div>
+      <a href="team.html" class="nav__dropdown-item">
+        <i class="fas fa-user-tie"></i>
+        <div>
+          <p class="dropdown-item__title">Leadership Team</p>
+          <span class="dropdown-item__desc">Meet our strategic advisors</span>
+        </div>
+      </a>
+      <a href="business-ethics.html" class="nav__dropdown-item">
+        <i class="fas fa-balance-scale"></i>
+        <div>
+          <span class="dropdown-item__title">Business Ethics</span>
+          <span class="dropdown-item__desc">Our commitment to integrity</span>
+        </div>
+      </a>
+      <a href="csr.html" class="nav__dropdown-item">
+        <i class="fas fa-handshake"></i>
+        <div>
+          <span class="dropdown-item__title">Corporate Responsibility</span>
+          <span class="dropdown-item__desc">Sustainable impact focus</span>
+        </div>
+      </a>
+    </div>
+  </li>
+  
+  <!-- Services Mega Menu -->
+  <li class="nav__item has-megamenu">
+    <a href="services.html" class="nav__link">
+      <i class="fas fa-chart-line nav__icon"></i>
+      <span class="nav__text">Services We Offer</span>
+      <i class="fas fa-chevron-down nav__dropdown-icon"></i>
+    </a>
+    <div class="nav__megamenu">
+      <div class="megamenu__grid">
+        <div class="megamenu__column">
+          <h4 class="megamenu__title">
+            <i class="fas fa-database text--blue"></i>
+            Data & Intelligence
+          </h4>
+          <a href="data-analysis.html" class="megamenu__item">
+            <i class="fas fa-chart-bar text--blue"></i>
+            <div>
+              <span class="megamenu__item-title">Data Intelligence</span>
+              <span class="megamenu__item-desc">Transform data into strategic assets</span>
+            </div>
+          </a>
+          <a href="analytics.html" class="megamenu__item">
+            <i class="fas fa-project-diagram text--blue"></i>
+            <div>
+              <span class="megamenu__item-title">Predictive Analytics</span>
+              <span class="megamenu__item-desc">Forward-looking insights</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="megamenu__column">
+          <h4 class="megamenu__title">
+            <i class="fas fa-laptop-code text--green"></i>
+            Digital Transformation
+          </h4>
+          <a href="digital-marketing.html" class="megamenu__item">
+            <i class="fas fa-bullhorn text--green"></i>
+            <div>
+              <span class="megamenu__item-title">Digital Marketing</span>
+              <span class="megamenu__item-desc">Optimize digital presence</span>
+            </div>
+          </a>
+          <a href="branding.html" class="megamenu__item">
+            <i class="fas fa-trademark text--green"></i>
+            <div>
+              <span class="megamenu__item-title">Branding Strategy</span>
+              <span class="megamenu__item-desc">Craft compelling brand narratives</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="megamenu__column">
+          <h4 class="megamenu__title">
+            <i class="fas fa-globe text--orange"></i>
+            Web Services
+          </h4>
+    
+          <a href="web-development.html" class="megamenu__item">
+            <i class="fas fa-code text--orange"></i>
+            <div>
+              <span class="megamenu__item-title">Web Development</span>
+              <span class="megamenu__item-desc">Digital solutions for online presence</span>
+            </div>
+          </a>
+          <a href="web-hosting.html" class="megamenu__item">
+            <i class="fas fa-server text--orange"></i>
+            <div>
+              <span class="megamenu__item-title">Web Hosting</span>
+              <span class="megamenu__item-desc">Reliable infrastructure for operations</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="megamenu__column">
+          <h4 class="megamenu__title">
+            <i class="fas fa-users-cog text--purple"></i>
+            Organization Excellence
+          </h4>
+  
+          <a href="hr-services.html" class="megamenu__item">
+            <i class="fas fa-user-graduate text--purple"></i>
+            <div>
+              <span class="megamenu__item-title">Talent Strategy</span>
+              <span class="megamenu__item-desc">Optimize human capital</span>
+            </div>
+          </a>
+          <a href="consulting.html" class="megamenu__item">
+            <i class="fas fa-lightbulb text--purple"></i>
+            <div>
+              <span class="megamenu__item-title">Strategic Consulting</span>
+              <span class="megamenu__item-desc">Expert advisory services</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </li>
+  
+  <!-- Client Impact -->
+  <li class="nav__item">
+    <a href="portfolio.html" class="nav__link">
+      <i class="fas fa-chart-pie nav__icon"></i>
+      <span class="nav__text">Portfolio</span>
+    </a>
+  </li>
+  
+  <!-- Insights -->
+  <li class="nav__item">
+    <a href="blog.html" class="nav__link">
+      <i class="fas fa-blog nav__icon"></i>
+      <span class="nav__text">Insights</span>
+    </a>
+  </li>
+
+  <!-- Contact -->
+  <li class="nav__item">
+    <a href="contact.html" class="nav__link">
+      <i class="fas fa-envelope nav__icon"></i>
+      <span class="nav__text">Contact</span>
+    </a>
+  </li>
+</ul>
+
+<!-- Right Side Actions -->
+<div class="nav__actions">
+  <!-- Search Toggle (Mobile) -->
+  <button class="nav__action-btn nav__action-search d--flex d--md-none" aria-label="Search">
+    <i class="fas fa-search"></i>
+  </button>
+  
+  <!-- Search Bar (Desktop) -->
+  <div class="nav__search d--none d--md-flex">
+    <form class="search-form--compact" id="headerSearchForm">
+      <div class="search-input-wrapper">
+        <input type="search" 
+               class="form-control search-input" 
+               placeholder="Search..." 
+               aria-label="Search">
+        <button type="submit" class="search-submit" aria-label="Submit search">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Mobile Menu Toggle -->
+  <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-menu">
+    <span class="menu-icon">
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+    </span>
+  </button>
+</div>
+
+  <!-- Mobile Search Overlay -->
+  <div class="mobile-search-overlay">
+    <div class="container">
+      <form class="search-form--mobile">
+        <div class="search-input-wrapper">
+          <i class="fas fa-search search-icon"></i>
+          <input type="search" 
+                 class="form-control search-input" 
+                 placeholder="Search strategic insights..." 
+                 aria-label="Search">
+          <button type="button" class="search-close" aria-label="Close search">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="search-suggestions">
+          <p class="text--sm text--muted mb--sm">Popular searches:</p>
+          <div class="flex flex--wrap gap--xs">
+            <a href="data-analysis.html" class="badge badge--suggestion">Data Intelligence</a>
+            <a href="web-development.html" class="badge badge--suggestion">Digital Transformation</a>
+            <a href="digital-marketing.html" class="badge badge--suggestion">Growth Strategy</a>
+            <a href="branding.html" class="badge badge--suggestion">Branding</a>
+            <a href="data-analysis.html" class="badge badge--suggestion">Market Analysis</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</header>
+
+<!-- Sticky Header Progress Indicator -->
+<div class="header-progress">
+  <div class="progress-bar"></div>
+</div>
+<!-- Breadcrumbs -->
+<div class="breadcrumbs bg--light pt--sm pb--sm">
+  <div class="container">
+    <nav aria-label="Breadcrumb">
+      <ul class="breadcrumb-list flex items--center gap--xs">
+        <li class="breadcrumb-item">
+          <a href="index.html" class="text--sm text--muted"><i class="fas fa-home mr--2xs"></i></a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="blog.html" class="text--sm text--muted">Strategic Insights</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="#" class="text--sm text--muted">Data Intelligence</a>
+        </li>
+        <li class="breadcrumb-item">
+          <span class="text--sm text--dark font--medium">Predictive Analytics Strategic Value</span>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<main class="main">
+  <!-- Article Header -->
+  <section class="section pt--xl pb--lg">
+    <div class="container max-w--content-lg">
+      <div class="article-header">
+        <div class="article-categories mb--md">
+          <a href="#" class="article-category-badge bg--blue">Data Intelligence</a>
+          <a href="#" class="article-category-badge bg--green">Growth Strategy</a>
+        </div>
+        
+        <h1 class="executive-heading executive-heading--xl mb--md">The Strategic Value of Predictive Analytics in Competitive Markets</h1>
+        
+        <div class="article-meta mb--xl">
+          <div class="article-author">
+            <div class="article-author__avatar">
+              <img src="images/team-man.jpeg" alt="John Smith" loading="lazy">
+            </div>
+            <div class="article-author__info">
+              <span class="article-author__name">John Smith</span>
+              <span class="article-author__role">Chief Strategy Officer</span>
+            </div>
+          </div>
+          <div class="article-details">
+            <span class="article-date"><i class="fas fa-calendar-alt mr--xs"></i>March 15, 2024</span>
+            <span class="article-read-time"><i class="fas fa-clock mr--xs"></i>8 min read</span>
+          </div>
+        </div>
+        
+        <div class="article-featured-image">
+          <img src="images/insights/featured-analytics.jpg" alt="Predictive Analytics Strategic Framework" class="rounded--lg" loading="lazy">
+          <div class="image-caption text--sm text--muted mt--sm">Predictive analytics transforms data into strategic foresight for competitive advantage</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Article Content -->
+  <section class="section pt--lg pb--xl">
+    <div class="container max-w--content-lg">
+      <div class="grid grid--3 gap--xl">
+        <!-- Main Content -->
+        <div class="grid__col-span-2">
+          <article class="article-content">
+            <div class="article-excerpt card bg--light p--lg mb--lg">
+              <p class="text--lg font--medium">Executive Summary: In today's hypercompetitive markets, predictive analytics has evolved from a technical capability to a strategic imperative. Organizations that effectively leverage predictive models gain significant advantages in anticipating market shifts, optimizing resource allocation, and creating sustainable competitive differentiation.</p>
+            </div>
+            
+            <h2>The Evolution of Predictive Capability</h2>
+            <p>Predictive analytics represents the third wave of business intelligence evolution. From descriptive analytics (what happened) to diagnostic analytics (why it happened), we now enter the era of predictive intelligence (what will happen). This shift fundamentally changes how organizations approach strategy, risk management, and opportunity identification.</p>
+            
+            <h3>Strategic Applications Across Business Functions</h3>
+            
+            <div class="insight-box bg--blue-light p--lg my--lg">
+              <h4 class="text--blue mb--sm"><i class="fas fa-lightbulb mr--sm"></i>Key Insight</h4>
+              <p class="mb--sm">Predictive analytics delivers maximum strategic value when integrated across functional silos, creating an organizational foresight capability rather than isolated point solutions.</p>
+            </div>
+            
+            <h4>1. Market Intelligence & Competitive Positioning</h4>
+            <p>Advanced predictive models can analyze competitor movements, market sentiment, and economic indicators to forecast industry shifts 6-18 months ahead of traditional market intelligence. Organizations using these capabilities report 23% faster response times to market disruptions and 17% higher market share growth in volatile sectors.</p>
+            
+            <h4>2. Customer Lifetime Value Optimization</h4>
+            <p>Predictive customer analytics moves beyond RFM (recency, frequency, monetary) models to incorporate behavioral patterns, engagement signals, and external data sources. This enables hyper-personalized experiences that increase customer retention by 35% and lifetime value by 42% in B2B environments.</p>
+            
+            <h4>3. Operational Efficiency & Risk Mitigation</h4>
+            <p>Supply chain disruptions cost organizations an average of 4.3% in annual revenue. Predictive models incorporating weather patterns, geopolitical factors, and supplier health indicators can reduce these losses by up to 68% while improving inventory optimization by 31%.</p>
+            
+            <h2>Building Predictive Capability: A Strategic Framework</h2>
+            
+            <div class="framework-card card p--lg my--lg border--blue">
+              <h3 class="text--blue mb--md">Four-Layer Predictive Maturity Model</h3>
+              <ol class="framework-list">
+                <li class="framework-item">
+                  <strong>Foundation:</strong> Data infrastructure and quality management
+                  <span class="text--sm text--muted d--block">Establish reliable data pipelines and governance</span>
+                </li>
+                <li class="framework-item">
+                  <strong>Descriptive Intelligence:</strong> Understanding current state
+                  <span class="text--sm text--muted d--block">Develop comprehensive business intelligence</span>
+                </li>
+                <li class="framework-item">
+                  <strong>Predictive Capability:</strong> Forecasting future states
+                  <span class="text--sm text--muted d--block">Implement machine learning and statistical models</span>
+                </li>
+                <li class="framework-item">
+                  <strong>Prescriptive Action:</strong> Automated decision systems
+                  <span class="text--sm text--muted d--block">Embed predictive insights into operational workflows</span>
+                </li>
+              </ol>
+            </div>
+            
+            <h2>Organizational Transformation Requirements</h2>
+            <p>Successful predictive analytics implementation requires more than technology investment. Our research identifies four critical success factors:</p>
+            
+            <div class="grid grid--2 gap--md my--lg">
+              <div class="success-factor card p--md">
+                <div class="success-factor__icon bg--blue text--white rounded--full"><i class="fas fa-users"></i></div>
+                <h4>Cross-Functional Governance</h4>
+                <p class="text--sm">Executive-sponsored governance councils aligning predictive initiatives with strategic priorities</p>
+              </div>
+              <div class="success-factor card p--md">
+                <div class="success-factor__icon bg--green text--white rounded--full"><i class="fas fa-graduation-cap"></i></div>
+                <h4>Data Literacy Programs</h4>
+                <p class="text--sm">Developing organization-wide understanding of data capabilities and limitations</p>
+              </div>
+              <div class="success-factor card p--md">
+                <div class="success-factor__icon bg--orange text--white rounded--full"><i class="fas fa-code-branch"></i></div>
+                <h4>Agile Experimentation Culture</h4>
+                <p class="text--sm">Rapid prototyping and testing of predictive models with business stakeholders</p>
+              </div>
+              <div class="success-factor card p--md">
+                <div class="success-factor__icon bg--purple text--white rounded--full"><i class="fas fa-chart-line"></i></div>
+                <h4>Value Realization Tracking</h4>
+                <p class="text--sm">Clear metrics linking predictive insights to business outcomes and ROI</p>
+              </div>
+            </div>
+            
+            <h2>Case Study: Global Manufacturing Transformation</h2>
+            <p>A Fortune 500 industrial manufacturer implemented our predictive analytics framework across their global supply chain. Within 18 months, they achieved:</p>
+            <ul class="achievement-list">
+              <li>32% reduction in inventory carrying costs</li>
+              <li>27% improvement in on-time delivery performance</li>
+              <li>41% decrease in supply chain disruption losses</li>
+              <li>$4.2M annual savings through predictive maintenance</li>
+            </ul>
+            
+            <h2>Strategic Implications for Leadership</h2>
+            <p>Predictive analytics fundamentally changes the role of executive leadership. Rather than making decisions based on historical performance, leaders must develop "future-back" thinking capabilities, using predictive insights to:</p>
+            <ol>
+              <li><strong>Anticipate rather than react</strong> to market changes</li>
+              <li><strong>Allocate resources dynamically</strong> based on opportunity forecasts</li>
+              <li><strong>Develop scenario planning capabilities</strong> for multiple possible futures</li>
+              <li><strong>Create early warning systems</strong> for strategic risks</li>
+            </ol>
+            
+            <div class="executive-takeaway card bg--dark text--white p--lg my--xl">
+              <h3 class="text--white"><i class="fas fa-chess-king mr--sm"></i>Executive Takeaway</h3>
+              <p class="mb--sm">Predictive analytics is no longer a competitive advantage—it's becoming table stakes in most industries. The organizations that will lead their sectors in the next decade are those building predictive capabilities today, not as isolated technology projects, but as core components of their strategic decision-making architecture.</p>
+              <p class="text--sm">The window for establishing this advantage is closing rapidly as AI and machine learning capabilities become more accessible. Organizations that delay risk being permanently disadvantaged by competitors who can see further, anticipate better, and respond faster.</p>
+            </div>
+            
+            <div class="article-tags mt--xl">
+              <h4 class="text--sm text--muted mb--sm">Strategic Tags:</h4>
+              <div class="flex flex--wrap gap--xs">
+                <a href="#" class="tag">#PredictiveAnalytics</a>
+                <a href="#" class="tag">#DataStrategy</a>
+                <a href="#" class="tag">#CompetitiveIntelligence</a>
+                <a href="#" class="tag">#DigitalTransformation</a>
+                <a href="#" class="tag">#StrategicForesight</a>
+              </div>
+            </div>
+          </article>
+          
+          <!-- Author Bio -->
+          <div class="author-bio card p--lg mt--xl">
+            <div class="flex items--center gap--md">
+              <div class="author-bio__avatar">
+                <img src="images/team-man.jpeg" alt="John Smith" class="rounded--full">
+              </div>
+              <div>
+                <h3 class="mb--xs">John Smith</h3>
+                <p class="text--sm text--muted mb--sm">Chief Strategy Officer | 15+ years in strategic advisory and data intelligence</p>
+                <p class="text--sm">John leads our strategic advisory practice, specializing in helping organizations transform data into competitive advantage. His research focuses on the intersection of analytics capability, organizational design, and strategic decision-making.</p>
+                <div class="author-links mt--sm">
+                  <a href="#" class="text--sm"><i class="fab fa-linkedin mr--xs"></i>Connect on LinkedIn</a>
+                  <a href="#" class="text--sm ml--md"><i class="fas fa-envelope mr--xs"></i>Contact John</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Related Articles -->
+          <div class="related-articles mt--xl">
+            <h3 class="mb--lg">Related Strategic Insights</h3>
+            <div class="grid grid--2 gap--md">
+              <div class="card card--hover p--md">
+                <div class="article-category-badge bg--green mb--sm">Digital Transformation</div>
+                <h4 class="text--md font--medium mb--sm"><a href="blog-agile-organizations.html">Architecting Agile Organizations for Market Responsiveness</a></h4>
+                <p class="text--sm">Frameworks for building organizational resilience through digital capability development</p>
+              </div>
+              <div class="card card--hover p--md">
+                <div class="article-category-badge bg--orange mb--sm">Organizational Excellence</div>
+                <h4 class="text--md font--medium mb--sm"><a href="blog-human-capital.html">Human Capital Strategy in the Age of Digital Disruption</a></h4>
+                <p class="text--sm">Strategic approaches to talent optimization and culture transformation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <!-- Categories -->
+          <div class="sidebar-widget card p--lg mb--lg">
+            <h4 class="sidebar-widget__title">Insight Categories</h4>
+            <ul class="sidebar-widget__list">
+              <li><a href="#" class="active"><i class="fas fa-brain mr--sm"></i>Data Intelligence <span class="badge">12</span></a></li>
+              <li><a href="#"><i class="fas fa-rocket mr--sm"></i>Digital Transformation <span class="badge">8</span></a></li>
+              <li><a href="#"><i class="fas fa-chess-king mr--sm"></i>Organizational Excellence <span class="badge">15</span></a></li>
+              <li><a href="#"><i class="fas fa-chart-line mr--sm"></i>Growth Strategy <span class="badge">9</span></a></li>
+              <li><a href="#"><i class="fas fa-users mr--sm"></i>Leadership Development <span class="badge">7</span></a></li>
+            </ul>
+          </div>
+          
+          <!-- Popular Insights -->
+          <div class="sidebar-widget card p--lg mb--lg">
+            <h4 class="sidebar-widget__title">Most Read Insights</h4>
+            <div class="popular-article mb--md">
+              <div class="text--sm text--muted">1. <a href="#" class="font--medium">Sustainable Growth in Hypercompetitive Markets</a></div>
+              <div class="text--xs text--muted">Growth Strategy | 5 min read</div>
+            </div>
+            <div class="popular-article mb--md">
+              <div class="text--sm text--muted">2. <a href="#" class="font--medium">Enterprise Architecture for Digital Innovation</a></div>
+              <div class="text--xs text--muted">Technology Solutions | 8 min read</div>
+            </div>
+            <div class="popular-article mb--md">
+              <div class="text--sm text--muted">3. <a href="#" class="font--medium">Adaptive Leadership for Complex Transformation</a></div>
+              <div class="text--xs text--muted">Leadership Development | 7 min read</div>
+            </div>
+          </div>
+          
+          <!-- Subscribe CTA -->
+          <div class="sidebar-widget card bg--blue p--lg">
+            <h4 class="text--white">Get Strategic Insights</h4>
+            <p class="text--sm text--white opacity--90 mb--md">Join 5,000+ executives receiving our evidence-based analysis</p>
+            <a href="#subscribe" class="btn btn--light btn--sm w--full">Subscribe Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Article Navigation -->
+  <div class="section bg--light pt--lg pb--lg">
+    <div class="container max-w--content-lg">
+      <div class="flex justify--between">
+        <a href="#" class="btn btn--outline">
+          <i class="fas fa-chevron-left mr--sm"></i>
+          Previous Insight
+        </a>
+        <a href="blog.html" class="btn btn--outline">
+          <i class="fas fa-th-large mr--sm"></i>
+          All Insights
+        </a>
+        <a href="#" class="btn btn--outline">
+          Next Insight
+          <i class="fas fa-chevron-right ml--sm"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <!-- Footer Main -->
+  <div class="footer__main">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Column 1 - Company Info -->
+        <div class="footer__section">
+          <div class="footer__brand">
+            <div><a href="index.html" class="footer__logo">
+              <img src="images/CC_Logo.png" alt="Consulting Crew" width="40" height="40" loading="lazy"></div>
+              <div class="flex--wrap">
+                <h4 class="footer__logo-title">Consulting Crew</h4>
+                <span class="footer__logo-tagline">Empowering Your Business to Grow</span>
+              </div>
+            </a>
+          </div>
+          
+          <p class="footer__description">
+            We architect sustainable competitive advantage through data intelligence, digital transformation, and organizational excellence for growth-focused organizations.
+          </p>
+          
+          <!-- Trust Indicators -->
+          <div class="footer__trust">
+            <div class="trust-item">
+              <i class="fas fa-shield-alt"></i>
+              <span>Trusted Advisory Partner</span>
+            </div>
+            <div class="trust-item">
+              <i class="fas fa-award"></i>
+              <span>Industry Recognition</span>
+            </div>
+            <div class="trust-item">
+              <i class="fas fa-check-circle"></i>
+              <span>95% Client Retention</span>
+            </div>
+          </div>
+        
+        <!-- Newsletter -->
+        <div class="footer__section">
+          <div class="footer__newsletter">
+            <h4 class="footer__title">Stay Updated</h4>
+            
+            <!-----------
+            <p class="footer__newsletter-desc">
+              Receive exclusive strategic frameworks, market analysis, and growth insights directly from our advisory team.
+            </p>
+            --------->
+            
+            <form class="newsletter-form" id="footerNewsletter">
+              <div class="form-group">
+                <input type="email" 
+                       class="form-control" 
+                       placeholder="Your professional email" 
+                       required>
+                <button type="submit" class="btn btn--primary">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+              <div class="form-checkbox">
+                <input type="checkbox" id="newsletterConsent" required>
+                <label for="newsletterConsent">
+                  I agree to receive strategic insights and updates
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Services Section -->
+<div class="footer__nav-section">
+  <h4 class="footer__title">
+    <i class="fas fa-chart-line"></i>
+    Our Services
+  </h4>
+  
+  <div class="footer__links-grid">
+    <!-- Data & Intelligence -->
+    <div class="services-category">
+      <h5 class="category-title">
+        <i class="fas fa-database"></i>
+        Data & Intelligence
+      </h5>
+      <ul class="footer__links">
+        <li>
+          <a href="data-analysis.html">
+            <i class="fas fa-chart-bar"></i>
+            Data Intelligence
+            <span class="link-badge">Featured</span>
+          </a>
+        </li>
+        <li>
+          <a href="analytics.html">
+            <i class="fas fa-project-diagram"></i>
+            Predictive Analytics
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <!-- Digital Transformation -->
+    <div class="services-category">
+      <h5 class="category-title">
+        <i class="fas fa-laptop-code"></i>
+        Digital Transformation
+      </h5>
+      <ul class="footer__links">
+        <li>
+          <a href="digital-marketing.html">
+            <i class="fas fa-bullhorn"></i>
+            Digital Marketing
+          </a>
+        </li>
+        <li>
+          <a href="branding.html">
+            <i class="fas fa-trademark"></i>
+            Branding & Identity
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <!-- Web Services -->
+    <div class="services-category">
+      <h5 class="category-title">
+        <i class="fas fa-globe"></i>
+        Web Services
+      </h5>
+      <ul class="footer__links">
+        <li>
+          <a href="web-development.html">
+            <i class="fas fa-code"></i>
+            Web Development
+          </a>
+        </li>
+        <li>
+          <a href="web-hosting.html">
+            <i class="fas fa-server"></i>
+            Web Hosting
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <!-- Organizational Excellence -->
+    <div class="services-category">
+      <h5 class="category-title">
+        <i class="fas fa-users-cog"></i>
+        Organizational Excellence
+      </h5>
+      <ul class="footer__links">
+        <li>
+          <a href="hr-services.html">
+            <i class="fas fa-user-graduate"></i>
+            Talent Strategy
+          </a>
+        </li>
+        <li>
+          <a href="consulting.html">
+            <i class="fas fa-lightbulb"></i>
+            Strategic Consulting
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+</div>
+
+<!-- Company Section -->
+<div class="footer__nav-section">
+  <h4 class="footer__title">
+    <i class="fas fa-building"></i>
+    Our Company
+  </h4>
+  
+  <div class="footer__links-grid">
+    <!-- About & Team -->
+    <div class="services-category">
+      <h5 class="category-title">
+        <i class="fas fa-info-circle"></i>
+        About Us
+      </h5>
+      <ul class="footer__links">
+        <li>
+          <a href="about.html">
+            <i class="fas fa-chevron-right"></i>
+            Our Story
+          </a>
+        </li>
+        <li>
+          <a href="team.html">
+            <i class="fas fa-chevron-right"></i>
+            Leadership Team
+          </a>
+        </li>
+        <li>
+          <a href="careers.html">
+            <i class="fas fa-chevron-right"></i>
+            Careers
+            <span class="link-badge">Hiring</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <!-- Impact & Insights -->
+    <div class="services-category">
+      <h6 class="category-title">
+        <i class="fas fa-chart-pie"></i>
+        Impact & Insights
+      </h6>
+      <ul class="footer__links">
+        <li>
+          <a href="portfolio.html">
+            <i class="fas fa-chevron-right"></i>
+            Client Portfolio
+          </a>
+        </li>
+        <li>
+          <a href="blog.html">
+            <i class="fas fa-chevron-right"></i>
+            Strategic Insights
+          </a>
+        </li>
+        <li>
+          <a href="case-studies.html">
+            <i class="fas fa-chevron-right"></i>
+            Case Studies
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Contact & Social -->
+<div class="footer__nav-section">
+  <h4 class="footer__title">
+    <i class="fas fa-envelope"></i>
+    Let's Engage
+  </h4>
+  
+  <div class="footer__contact-grid">
+    <div class="contact-method">
+      <div class="contact-method__icon">
+        <i class="fas fa-envelope"></i>
+      </div>
+      <div>
+        <p class="contact-method__info">
+          <a href="mailto:engage@consultingcrew.com" class="contact-method__link">
+            engage@consultingcrew.com
+          </a>
+        </p>
+      </div>
+    </div>
+    
+    <div class="contact-method">
+      <div class="contact-method__icon">
+        <i class="fas fa-phone"></i>
+      </div>
+      <div>
+        <p class="contact-method__info">
+          <a href="tel:+923323450433" class="contact-method__link">
+            +92 332 3450433
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="contact-method">
+      <div class="contact-method__icon">
+        <i class="fas fa-clock"></i>
+      </div>
+      <div>
+        <p class="contact-method__info">
+          <a class="contact-method__link">
+          Mon-Fri: 9:00 AM - 6:00 PM
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="contact-method">
+      <div class="contact-method__icon">
+        <i class="fas fa-map-marker-alt"></i>
+      </div>
+      <div>
+        <p class="contact-method__info">
+          <a class="contact-method__link">
+          Serving clients globally with headquarters in Pakistan
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+          <!-- Social Media -->
+          <div class="footer__social">
+            <h5 class="footer__subtitle">Let's Connect</h5>
+            <div class="social-links">
+              <a href="https://linkedin.com/company/consultingcrew" class="social-link" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+                <span class="social-tooltip">Professional Network</span>
+              </a>
+              <a href="https://twitter.com/consultingcrew" class="social-link" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+                <span class="social-tooltip">Industry Insights</span>
+              </a>
+              <a href="https://youtube.com/@consultingcrew" class="social-link" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+                <span class="social-tooltip">Expert Webinars</span>
+              </a>
+              <a href="https://instagram.com/consultingcrew" class="social-link" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+                <span class="social-tooltip">Behind the Scenes</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__bottom-content">
+    
+        <div class="footer__copyright">
+          <p>&copy; <span id="currentYear"></span> Consulting Crew. All rights reserved.</p>
+        </div>
+        
+        <div class="footer__legal">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <span>•</span>
+          <a href="terms-of-service.html">Terms of Service</a>
+          <span>•</span>
+          <a href="cookies-policy.html">Cookie Policy</a>
+          <span>•</span>
+          <a href="disclaimer.html">Disclaimer</a>
+        </div>
+
+        <button class="footer__back-to-top" id="footerBackToTop" aria-label="Back to top">
+          <i class="fas fa-chevron-up"></i>
+          <span>Back to Top</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+<!-- Chat Widget -->
+<div class="chat-widget">
+    <button class="chat-toggle" aria-label="Open chat">
+        <i class="fas fa-comments"></i>
+        <span class="chat-badge">Live</span>
+    </button>
+    <div class="chat-window">
+        <div class="chat-header">
+            <h4>Strategic Advisory Support</h4>
+            <button class="chat-close" aria-label="Close chat">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-message chat-message--bot">
+                <p>Hello! How can we assist with your strategic growth questions today?</p>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type your question..." aria-label="Chat message">
+            <button type="submit" aria-label="Send message">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+</div>
+</footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

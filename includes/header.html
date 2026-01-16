@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulting Crew | Professional Business Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-banner">
+        <div class="cookie-content">
+            <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies. 
+                <a href="cookie-policy.html">Learn more</a>
+            </p>
+            <div class="cookie-buttons">
+                <button id="acceptCookies" class="btn btn-primary">Accept</button>
+                <button id="declineCookies" class="btn btn-secondary">Decline</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Live Chat Widget -->
+    <div id="chatWidget" class="chat-widget">
+        <div class="chat-header">
+            <h4><i class="fas fa-comments"></i> Live Chat</h4>
+            <button id="closeChat" class="chat-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-messages">
+                <div class="chat-message bot">
+                    <p>Hello! How can we help you today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type your message...">
+                <button id="sendChat" class="chat-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    <button id="openChat" class="chat-toggle">
+        <i class="fas fa-comment"></i>
+    </button>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-container">
+                            <span class="logo-icon">CC</span>
+                            <div class="logo-text">
+                                <span class="logo-main">Consulting</span>
+                                <span class="logo-sub">Crew</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Navigation -->
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="dropdown">
+                            <a href="services.html" class="dropdown-toggle">
+                                Services <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="pages/service-data-analysis.html">Data Analysis & Visualization</a>
+                                <a href="pages/service-web-development.html">Web Development</a>
+                                <a href="pages/service-web-hosting.html">Web Hosting</a>
+                                <a href="pages/service-branding.html">Branding & Identity</a>
+                                <a href="pages/service-digital-marketing.html">Digital Marketing</a>
+                                <a href="pages/service-hr.html">HR Services</a>
+                            </div>
+                        </li>
+                        <li><a href="blog.html">Insights</a></li>
+                        <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <div class="mobile-nav-header">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-container">
+                        <span class="logo-icon">CC</span>
+                        <div class="logo-text">
+                            <span class="logo-main">Consulting</span>
+                            <span class="logo-sub">Crew</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <button class="mobile-close"><i class="fas fa-times"></i></button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li class="mobile-dropdown">
+                <a href="services.html" class="mobile-dropdown-toggle">
+                    <i class="fas fa-cogs"></i> Services <i class="fas fa-chevron-down"></i>
+                </a>
+                <div class="mobile-dropdown-menu">
+                    <a href="pages/service-data-analysis.html">Data Analysis & Visualization</a>
+                    <a href="pages/service-web-development.html">Web Development</a>
+                    <a href="pages/service-web-hosting.html">Web Hosting</a>
+                    <a href="pages/service-branding.html">Branding & Identity</a>
+                    <a href="pages/service-digital-marketing.html">Digital Marketing</a>
+                    <a href="pages/service-hr.html">HR Services</a>
+                </div>
+            </li>
+            <li><a href="blog.html"><i class="fas fa-blog"></i> Insights</a></li>
+            <li><a href="contact.html" class="mobile-nav-cta"><i class="fas fa-phone-alt"></i> Contact Us</a></li>
+        </ul>
+    </div>
